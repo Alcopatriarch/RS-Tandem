@@ -5,4 +5,4 @@ This is a modern educational tool designed to simplify the way developers learn.
 2. Vladyslav Ivankov: [Alcopatriarch](https://github.com/Alcopatriarch)
 3. Karyna Avdieieva: [karinavd](https://github.com/karinavd)
 ### Link to deploy
-https://rs-tandem-unexpected-case.netlify.app
+https://rs-tandem-seven.vercel.app
