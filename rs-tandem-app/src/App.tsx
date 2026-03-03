@@ -13,7 +13,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1 className="font-figtree">Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -26,7 +26,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
   	  <div className="min-h-screen bg-american-silver flex items-center justify-center">
-      	<h1 className="text-5xl md:text-7xl font-black text-white tracking-tight drop-shadow-2xl animate-pulse">
+      	<h1 className="text-5xl font-figtree md:text-7xl font-black text-white tracking-tight drop-shadow-2xl animate-pulse">
       	  Tailwind v4 + Vite + React
         </h1>
       </div>
