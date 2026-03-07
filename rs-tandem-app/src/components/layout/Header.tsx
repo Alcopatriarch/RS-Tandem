@@ -15,7 +15,7 @@ export const Header: React.FC<HeaderProps> = ({
   darkMode = true,
   lang = "RU",
   onLangChange,
-/*  onThemeChange,*/
+  /* onThemeChange,*/
 }) => {
   return (
     <header
@@ -69,7 +69,8 @@ export const Header: React.FC<HeaderProps> = ({
         </Select>
 
         <Select
-          value={darkMode}
+          value={darkMode ? "dark" : "light"}
+          onChange={(e) => onLangChange?.(e.target.value as "RU" | "EN")}
           sx={{
             minWidth: 44,
             height: 34,
@@ -96,13 +97,13 @@ export const Header: React.FC<HeaderProps> = ({
             },
           }}
         >
-          <MenuItem value={false}>
+          <MenuItem value="light">
             <LightModeIcon
               fontSize="small"
               sx={{ color: "var(--color-cadet-grey)" }}
             />
           </MenuItem>
-          <MenuItem value={true}>
+          <MenuItem value="dark">
             <DarkModeIcon
               fontSize="small"
               sx={{ color: "var(--color-cadet-grey)" }}
