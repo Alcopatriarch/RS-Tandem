@@ -15,7 +15,7 @@ export const Header: React.FC<HeaderProps> = ({
   darkMode = true,
   lang = "RU",
   onLangChange,
-  onThemeChange,
+/*  onThemeChange,*/
 }) => {
   return (
     <header
