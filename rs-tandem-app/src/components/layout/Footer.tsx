@@ -3,11 +3,11 @@ import React from "react";
 export const Footer: React.FC = () => {
   return (
     <footer className="w-full">
-      <div className="border-t border-[var(--color-american-silver)]"></div>
+      <div className="border-t border-american-silver"></div>
       <div
-        className={`h-[80px] bg-[var(--color-dark-gunmetal)] dark:bg-[var(--color-milk)] flex flex-col items-center justify-center text-center px-7`}
+        className={`h-20 bg-dark-gunmetal dark:bg-milk flex flex-col items-center justify-center text-center px-7`}
       >
-        <span className="text-[32px] text-[var(--color-american-silver)] dark:text-[var(--color-dark-gunmetal)] font-figtree">
+        <span className="text-[32px] text-american-silver dark:text-dark-gunmetal font-figtree">
           About us
         </span>
       </div>
