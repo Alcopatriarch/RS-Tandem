@@ -8,18 +8,18 @@ type HeaderProps = {
 };
 export const Welcome: React.FC<HeaderProps> = ({ darkMode = false }) => {
   return (
-    <section className="w-full bg-[var(--color-dark-gunmetal)] dark:bg-[var(--color-milk)] flex flex-col items-center justify-center text-center px-6">
+    <section className="w-full bg-dark-gunmetal dark:bg-milk flex flex-col items-center justify-center text-center px-6">
       <img
         src={darkMode ? lightImg : darkImg}
-        className="w-[440px] mb-12"
+        className="w-110 mb-12"
         alt="logo"
       />
 
-      <h1 className="text-[80px] text-[var(--color-american-silver)] dark:text-[var(--color-dark-gunmetal)] font-[var(--font-figtree)] mb-6">
+      <h1 className="text-[80px] text-american-silver dark:text-dark-gunmetal font-(--font-figtree) mb-6">
         Welcome to the Tandem App
       </h1>
 
-      <p className="text-[45px] text-[var(--color-american-silver)] dark:text-[var(--color-dark-gunmetal)] mb-20">
+      <p className="text-[45px] text-american-silver dark:text-dark-gunmetal mb-20">
         Learn. Create. Conquer.
       </p>
 
@@ -55,7 +55,7 @@ export const Welcome: React.FC<HeaderProps> = ({ darkMode = false }) => {
           Register
         </Button>
       </div>
-      <div className="w-[440px] h-[97px]"> </div>
+      <div className="w-110 h-[97px]"> </div>
     </section>
   );
 };
