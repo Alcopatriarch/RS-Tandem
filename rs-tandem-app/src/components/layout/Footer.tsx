@@ -1,9 +1,13 @@
-export const Footer = () => {
+import React from "react";
+
+export const Footer: React.FC = () => {
   return (
-    <footer className="absolute top-[906px] left-0 w-[1440px]">
+    <footer className="w-full">
       <div className="border-t border-[var(--color-american-silver)]"></div>
-      <div className="max-w-[1440px] mx-auto py-[17px] flex justify-center">
-        <span className="text-[32px] text-[var(--color-american-silver)] font-figtree">
+      <div
+        className={`h-[80px] bg-[var(--color-dark-gunmetal)] dark:bg-[var(--color-milk)] flex flex-col items-center justify-center text-center px-7`}
+      >
+        <span className="text-[32px] text-[var(--color-american-silver)] dark:text-[var(--color-dark-gunmetal)] font-figtree">
           About us
         </span>
       </div>
