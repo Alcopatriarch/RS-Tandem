@@ -1,28 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme{
-    --color-american-silver: #CCD0CF;
-    --color-cadet-grey: #9BA8AB;
-    --color-deep-space-sparke: #4A5C6A;
-    --color-japanese-indigo: #253745;
-    --color-dark-gunmetal: #11212D;
-    --color-eerie-black: #0E1A24;
-    --color-american-blue: #433667;
-    --color-rich-black: #06141B;
-    --color-chocolate-cosmos: #53161D;
-    --color-dark-green: #043222;
-    --color-brown-sugar: #B7694A;
-    --color-sky-blue: #C8D9E6;
-    --color-teal: #567CBD;
-    --color-milk: #FFFDF6;
-    --color-gainsboro: #E2D4E0;
-    --color-manatee: #949AB1;
-    --color-rhythm: #7C7E9D;
-    --color-independence: #4C5372;
-    --font-figtree: "Figtree", sans-serif;
+@theme {
+  --color-american-silver: #ccd0cf;
+  --color-cadet-grey: #9ba8ab;
+  --color-deep-space-sparke: #4a5c6a;
+  --color-japanese-indigo: #253745;
+  --color-dark-gunmetal: #11212d;
+  --color-eerie-black: #0e1a24;
+  --color-american-blue: #433667;
+  --color-rich-black: #06141b;
+  --color-chocolate-cosmos: #53161d;
+  --color-dark-green: #043222;
+  --color-brown-sugar: #b7694a;
+  --color-sky-blue: #c8d9e6;
+  --color-teal: #567cbd;
+  --color-milk: #fffdf6;
+  --color-gainsboro: #e2d4e0;
+  --color-manatee: #949ab1;
+  --color-rhythm: #7c7e9d;
+  --color-independence: #4c5372;
+  --font-figtree: "Figtree", sans-serif;
 }
+
 #root {
   max-width: 1280px;
   text-align: center;
