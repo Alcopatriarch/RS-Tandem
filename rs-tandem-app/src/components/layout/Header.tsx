@@ -22,11 +22,11 @@ export const Header: React.FC<HeaderProps> = ({
     <header
       className={`
         h-14 sm:h-16
-        bg-[var(--color-eerie-black)]  dark:bg-[var(--color-gainsboro)]
+        bg-eerie-black  dark:bg-gainsboro
         border-b border-[var(--color-deep-space-sparke)/0.5]
         px-4 sm:px-6
         flex items-center justify-between
-        text-[var(--color-american-silver)]  dark:text-[var(--color-dark-gunmetal)]
+        text-american-silver dark:text-dark-gunmetal
         font-['Figtree'] weight-medium
         select-none
       `}
