@@ -5,7 +5,7 @@ const SignInBtn = () => {
     <div>
       <button
         type="submit"
-        className="mx-auto my-0 w-[280px] h-[70px] bg-deep-space-sparke rounded-xl text-3xl font-regular cursor-pointer"
+        className="mx-auto my-0 w-[250px] h-[60px] bg-deep-space-sparke rounded-xl text-3xl font-regular cursor-pointer"
       >
         Sign In
       </button>
