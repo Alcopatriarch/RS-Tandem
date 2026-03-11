@@ -21,9 +21,9 @@ const AuthInput = ({
         className="font-figtree text-2xl w-full font-semibold placeholder-japanese-indigo text-japanese-indigo h-15 p-2 rounded-xl max-w-[680px] border-american-blue border-2 bg-american-silver focus:outline-none focus:ring-2 focus:ring-blue-400"
         {...register}
       />
-      {error?.message && (
-        <p className="text-[red] text-xl font-bold">{String(error.message)}</p>
-      )}
+      <p className="text-[red] text-xl font-bold h-7">
+        {error?.message ? String(error.message) : " "}
+      </p>
     </div>
   );
 };
