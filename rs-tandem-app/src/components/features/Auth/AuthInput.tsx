@@ -1,7 +1,14 @@
 import React from "react";
 import type { AuthPropsType } from "../../../types/LoginType/AuthPropsType";
 
-const AuthInput = ({label,id,type = "text",placeholder,register,error}: AuthPropsType) => {
+const AuthInput = ({
+  label,
+  id,
+  type = "text",
+  placeholder,
+  register,
+  error,
+}: AuthPropsType) => {
   return (
     <div className="flex flex-col items-start gap-[15px] w-full">
       <label htmlFor={id} className="font-figtree text-3xl font-bold">
