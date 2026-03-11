@@ -3,7 +3,7 @@ import { Header } from "./components/layout/Header";
 import { Footer } from "./components/layout/Footer";
 import "./App.css";
 import { useState } from "react";
-import Login from "./pages/Login";
+import Registration from "./pages/Registration";
 function App() {
   const [isDark, setDark] = useState(false);
 
@@ -16,7 +16,7 @@ function App() {
       <div className={`${isDark ? "dark" : ""} flex flex-col min-h-screen`}>
         <Header darkMode={isDark} lang="RU" onThemeChange={toggleTheme} />
         <main className="flex-1 flex items-center justify-center p-1">
-          <Login />
+          <Registration/>
           {/* <Welcome darkMode={isDark} /> */}
         </main>
         <Footer />

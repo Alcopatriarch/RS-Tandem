@@ -8,8 +8,9 @@ import type { FieldConfigType } from "../../../types/LoginType/AuthPropsType";
 type propsAuth = {
   dataArray: FieldConfigType<LoginType>[];
   label: string;
+  btnContent:string;
 };
-const Auth: React.FC<propsAuth> = ({ dataArray, label }) => {
+const Auth: React.FC<propsAuth> = ({ dataArray, label,btnContent }) => {
   const {
     register,
     handleSubmit,
@@ -45,7 +46,7 @@ const Auth: React.FC<propsAuth> = ({ dataArray, label }) => {
             />
           ))}
 
-          <SignInBtn />
+          <SignInBtn btnContent = {btnContent}/>
         </form>
       </div>
     </>
