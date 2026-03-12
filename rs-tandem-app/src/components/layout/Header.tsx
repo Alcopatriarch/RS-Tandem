@@ -21,9 +21,10 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <header
       className={`
+        shrink-0
         h-14 sm:h-16
         bg-eerie-black  dark:bg-gainsboro
-        border-b border-[var(--color-deep-space-sparke)/0.5]
+        border-b-[0.5px] border-[var(--color-american-silver)]
         px-4 sm:px-6
         flex items-center justify-between
         text-american-silver dark:text-dark-gunmetal
