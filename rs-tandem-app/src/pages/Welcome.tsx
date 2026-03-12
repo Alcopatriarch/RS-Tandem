@@ -2,11 +2,13 @@ import React from "react";
 import { Button } from "@mui/material";
 import lightImg from "../assets/welcome_light.png";
 import darkImg from "../assets/welcome_dark.png";
+import { useNavigate } from "react-router-dom";
 
 type HeaderProps = {
   darkMode?: boolean;
 };
 export const Welcome: React.FC<HeaderProps> = ({ darkMode = false }) => {
+  const navigate = useNavigate();
   return (
     <section className="w-full bg-dark-gunmetal dark:bg-milk flex flex-col items-center justify-center text-center px-6">
       <img
@@ -35,6 +37,7 @@ export const Welcome: React.FC<HeaderProps> = ({ darkMode = false }) => {
             textTransform: "none",
             color: "#CCD0CF",
           }}
+          onClick={()=>{navigate('/login')}}
         >
           Sign In
         </Button>
