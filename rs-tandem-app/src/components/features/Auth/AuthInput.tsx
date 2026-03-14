@@ -1,4 +1,3 @@
-import React from "react";
 import type { AuthPropsType } from "../../../types/LoginType/AuthPropsType";
 
 const AuthInput = ({
