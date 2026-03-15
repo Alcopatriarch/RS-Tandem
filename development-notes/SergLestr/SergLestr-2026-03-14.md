@@ -1,16 +1,16 @@
 # Дата: 2026-03-14
 
 - **Что было сделано:**
-  1. Изучал документацию и реализововал authorization whith Firebase
+  1. Изучал документацию и реализововал authorization with Firebase
 
 - **Проблемы:**
-  Есть некоторые проблемы, при реализации authorization whith Firebase
+  Есть некоторые проблемы, при реализации authorization with Firebase
 
 - **Решения (или попытки):**
-  Использовал документацию, гайды по authorization whith Firebase
+  Использовал документацию, гайды по authorization with Firebase
 
 - **Мысли / Планы:** 
-  1. Закончить реализацию authorization whith Firebase и внести в проект
+  1. Закончить реализацию authorization with Firebase и внести в проект
   2. Реализация ранее запланированного
 
 - **Затраченное время:** 6 часов
