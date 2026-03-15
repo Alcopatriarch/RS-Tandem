@@ -9,7 +9,10 @@ export const Footer: React.FC = () => {
       <div
         className={`h-20 bg-dark-gunmetal dark:bg-milk flex flex-col items-center justify-center text-center px-7`}
       >
-        <span className="text-[32px] text-american-silver dark:text-dark-gunmetal font-figtree" onClick={()=>navigate('/about')}>
+        <span
+          className="text-[32px] text-american-silver dark:text-dark-gunmetal font-figtree"
+          onClick={() => navigate("/about")}
+        >
           About us
         </span>
       </div>
