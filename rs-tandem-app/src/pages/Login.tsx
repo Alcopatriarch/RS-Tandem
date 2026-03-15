@@ -1,4 +1,3 @@
-import React from "react";
 import Auth from "../components/features/Auth/Auth";
 import { emailFieldConfig } from "../components/features/Auth/config/authFields/emailFieldConfig";
 import { passwordFieldConfig } from "../components/features/Auth/config/authFields/passwordFieldConfig";

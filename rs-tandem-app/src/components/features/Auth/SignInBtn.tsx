@@ -1,5 +1,3 @@
-import React from "react";
-
 const SignInBtn = ({btnContent}:{btnContent:string}) => {
   return (
     <div>
