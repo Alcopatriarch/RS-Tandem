@@ -4,7 +4,7 @@ import { passwordFieldConfig } from "../components/features/Auth/config/authFiel
 
 const Login = () => {
   const dataArray = [emailFieldConfig, passwordFieldConfig];
-  return <Auth dataArray={dataArray} label="Login" btnContent = "Sign In"/>;
+  return <Auth dataArray={dataArray} label="Login" btnContent="Sign In" />;
 };
 
 export default Login;

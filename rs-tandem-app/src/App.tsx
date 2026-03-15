@@ -16,20 +16,20 @@ function App() {
 
   return (
     <BrowserRouter>
-    <div className="absolute top-0 left-0 w-[100%] min-h-screen bg-[#11212D] font-figtree">
-      <div className={`${isDark ? "dark" : ""} flex flex-col min-h-screen`}>
-        <Header darkMode={isDark} lang="RU" onThemeChange={toggleTheme} />
-        <main className="flex-1 flex items-center justify-center p-1">
-          <Routes>
-            <Route path="/" element={<Welcome darkMode={isDark} />} />
-            <Route path="/login" element={ <Login />} />
-            <Route path="/about" element={ <AboutUs />} />
-            {/* <Route path="/signUp" element={ < />} /> */}
-          </Routes>
-        </main>
-        <Footer />
+      <div className="absolute top-0 left-0 w-[100%] min-h-screen bg-[#11212D] font-figtree">
+        <div className={`${isDark ? "dark" : ""} flex flex-col min-h-screen`}>
+          <Header darkMode={isDark} lang="RU" onThemeChange={toggleTheme} />
+          <main className="flex-1 flex items-center justify-center p-1">
+            <Routes>
+              <Route path="/" element={<Welcome darkMode={isDark} />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="/signUp" element={<Registration />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
       </div>
-    </div>
     </BrowserRouter>
   );
 }
