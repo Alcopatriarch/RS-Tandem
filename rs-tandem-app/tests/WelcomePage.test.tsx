@@ -1,11 +1,8 @@
-// tests/Welcome.test.tsx   (или WelcomePage.test.tsx — как принято в проекте)
-
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import { Welcome } from "../src/pages/Welcome";
 
-// Hoisted мок, чтобы переменная была доступна внутри vi.mock (hoisting Vitest)
 const { mockedNavigate } = vi.hoisted(() => ({
   mockedNavigate: vi.fn(),
 }));
