@@ -56,6 +56,9 @@ export const Welcome: React.FC<HeaderProps> = ({ darkMode = false }) => {
             textTransform: "none",
             color: "#433667",
           }}
+          onClick={() => {
+            navigate("/signUp");
+          }}
         >
           Register
         </Button>
