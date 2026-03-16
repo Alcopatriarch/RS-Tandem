@@ -1,0 +1,16 @@
+[
+  {
+    "id": "q1",
+    "question": "React uses a Virtual DOM",
+    "type": "trueFalse",
+    "answers": ["True", "False"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "q2",
+    "question": "JavaScript is strongly typed",
+    "type": "trueFalse",
+    "answers": ["True", "False"],
+    "correctAnswer": 1
+  }
+]
