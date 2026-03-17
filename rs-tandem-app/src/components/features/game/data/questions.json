@@ -12,5 +12,19 @@
     "type": "trueFalse",
     "answers": ["True", "False"],
     "correctAnswer": 1
+  },
+  {
+    "id": "q3",
+    "question": "Which language runs in the browser?",
+    "type": "ABC",
+    "answers": ["A. Python", "B. Java", "C. JavaScript", "D. None of them"],
+    "correctAnswer": 2
+  },
+  {
+    "id": "q4",
+    "question": "What will the following code output? console.log(typeof NaN);",
+    "type": "ABC",
+    "answers": ["A. number", "B. NaN", "C. undefined", "D. object"],
+    "correctAnswer": 1
   }
 ]

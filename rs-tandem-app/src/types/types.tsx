@@ -1,4 +1,4 @@
-export type QuestionType = "trueFalse";
+export type QuestionType = "trueFalse" | "ABC";
 
 export interface Question {
   id: string;
