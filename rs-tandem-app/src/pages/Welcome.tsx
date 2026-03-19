@@ -37,7 +37,9 @@ export const Welcome: React.FC<HeaderProps> = ({ darkMode = false }) => {
             textTransform: "none",
             color: "#CCD0CF",
           }}
-          onClick={()=>{navigate('/login')}}
+          onClick={() => {
+            navigate("/login");
+          }}
         >
           Sign In
         </Button>
@@ -53,6 +55,9 @@ export const Welcome: React.FC<HeaderProps> = ({ darkMode = false }) => {
             fontSize: "40px",
             textTransform: "none",
             color: "#433667",
+          }}
+          onClick={() => {
+            navigate("/signUp");
           }}
         >
           Register
