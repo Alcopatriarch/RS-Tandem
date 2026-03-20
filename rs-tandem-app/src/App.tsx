@@ -1,10 +1,13 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import { Header } from "./components/layout/Header";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Welcome } from "./pages/Welcome";
+import { Footer } from "./components/layout/Footer";
 import "./App.css";
-
+import { useState } from "react";
+import Registration from "./pages/Registration";
+import Login from "./pages/Login";
+import AboutUs from "./pages/AboutUs";
 function App() {
-  const [count, setCount] = useState(0);
-
   const [isDark, setDark] = useState(false);
 
   const toggleTheme = () => {
@@ -12,34 +15,22 @@ function App() {
   };
 
   return (
-    <body className={isDark ? "dark" : ""}>
-      <button onClick={toggleTheme}>Toggle theme</button>
-      <div>
-        <a href="https://vite.dev" target="_blank"></a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <BrowserRouter>
+      <div className="absolute top-0 left-0 w-[100%] min-h-screen bg-[#11212D] font-figtree">
+        <div className={`${isDark ? "dark" : ""} flex flex-col min-h-screen`}>
+          <Header darkMode={isDark} lang="RU" onThemeChange={toggleTheme} />
+          <main className=" bg-milk dark:bg-dark-gunmetal flex-1 flex items-center justify-center p-1">
+            <Routes>
+              <Route path="/" element={<Welcome darkMode={isDark} />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="/signUp" element={<Registration />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
       </div>
-      <h1 className="bg-white text-black dark:bg-black dark:text-white">
-        Vite + React
-      </h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center">
-        <h1 className="text-5xl md:text-7xl font-black text-white tracking-tight drop-shadow-2xl animate-pulse">
-          Tailwind v4 + Vite + React
-        </h1>
-      </div>
-    </body>
+    </BrowserRouter>
   );
 }
 
