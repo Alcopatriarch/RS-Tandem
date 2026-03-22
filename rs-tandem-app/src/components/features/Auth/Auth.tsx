@@ -7,14 +7,10 @@ import SignInBtn from "./SignInBtn";
 import type { FieldConfigType } from "../../../types/LoginType/AuthPropsType";
 import { auth } from "../../../features/auth/api/firebase";
 import {
-  getAuth,
   signInWithEmailAndPassword,
   updateProfile,
   createUserWithEmailAndPassword,
-  signOut,
 } from "firebase/auth";
-
-export let user: any = null;
 
 async function SignInUser(
   email: string,
@@ -27,7 +23,7 @@ async function SignInUser(
       email,
       password,
     );
-    user = userCredential.user;
+    const user = userCredential.user;
 
     await updateProfile(user, { displayName });
 
@@ -44,7 +40,7 @@ async function LoginUser(email: string, password: string) {
       email,
       password,
     );
-    user = userCredential.user;
+    const user = userCredential.user;
 
     console.log("Вход выполнен:", user.email);
     console.log("Текущее имя:", user.displayName || "не установлено");
@@ -80,7 +76,7 @@ const Auth: React.FC<propsAuth> = ({ dataArray, label, btnContent }) => {
     } else if (label === "Login") {
       LoginUser(data.authEmail, data.authPassword)
         .then((loggedInUser) => {
-          user = loggedInUser;
+          const user = loggedInUser;
           console.log("Пользователь вошел в систему:", user);
         })
         .catch((error) => {
