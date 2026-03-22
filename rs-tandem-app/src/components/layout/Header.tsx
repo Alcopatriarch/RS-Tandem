@@ -23,11 +23,11 @@ export const Header: React.FC<HeaderProps> = ({
       className={`
         shrink-0
         h-14 sm:h-16
-        bg-eerie-black  dark:bg-gainsboro
+        bg-gainsboro  dark:bg-eerie-black
         border-b-[0.5px] border-[var(--color-american-silver)]
         px-4 sm:px-6
         flex items-center justify-between
-        text-american-silver dark:text-dark-gunmetal
+        text-dark-gunmetal dark:text-american-silver
         font-['Figtree'] weight-medium
         select-none
       `}

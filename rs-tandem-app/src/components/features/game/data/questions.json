@@ -1,0 +1,44 @@
+[
+  {
+    "id": "q1",
+    "question": "React uses a Virtual DOM",
+    "type": "trueFalse",
+    "answers": ["True", "False"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "q2",
+    "question": "JavaScript is strongly typed",
+    "type": "trueFalse",
+    "answers": ["True", "False"],
+    "correctAnswer": 1
+  },
+  {
+    "id": "q3",
+    "question": "Which language runs in the browser?",
+    "type": "ABC",
+    "answers": ["A. Python", "B. Java", "C. JavaScript", "D. None of them"],
+    "correctAnswer": 2
+  },
+  {
+    "id": "q4",
+    "question": "What will the following code output? console.log(typeof NaN);",
+    "type": "ABC",
+    "answers": ["A. number", "B. NaN", "C. undefined", "D. object"],
+    "correctAnswer": 1
+  },
+  {
+    "id": "q5",
+    "question": "Identify which of the following operators is not a comparison operator in JavaScript",
+    "type": "oneOut",
+    "answers": ["===", "==", "=", "!="],
+    "correctAnswer": 3
+  },
+  {
+    "id": "q6",
+    "question": "Identify which of the following methods is not a standard method for working with arrays in JavaScript",
+    "type": "oneOut",
+    "answers": ["push()", "pop()", "shift()", "print()"],
+    "correctAnswer": 4
+  }
+]

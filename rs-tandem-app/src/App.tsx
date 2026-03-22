@@ -20,7 +20,7 @@ function App() {
       <div className="absolute top-0 left-0 w-[100%] min-h-screen bg-[#11212D] font-figtree">
         <div className={`${isDark ? "dark" : ""} flex flex-col min-h-screen`}>
           <Header darkMode={isDark} lang="RU" onThemeChange={toggleTheme} />
-          <main className="flex-1 flex items-center justify-center p-1">
+          <main className=" bg-milk dark:bg-dark-gunmetal flex-1 flex items-center justify-center p-1">
             <Routes>
               <Route path="/" element={<Welcome darkMode={isDark} />} />
               <Route path="/login" element={<Login />} />

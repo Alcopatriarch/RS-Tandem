@@ -6,26 +6,30 @@ export interface TeamMember {
   image: string;
 }
 
+import alcopatriarchImage from "../assets/images/alcopatriarch.png";
+import karinaImage from "../assets/images/karina.jfif";
+import sergeyImage from "../assets/images/sergey.png";
+
 export const team: TeamMember[] = [
   {
     id: 1,
     name: "Vladyslav Ivankov",
     git: "https://github.com/Alcopatriarch",
     description: "Тимлид, веб-разработчик и немного геймдизайнер",
-    image: "../../public/alcopatriarch.png",
+    image: alcopatriarchImage,
   },
   {
     id: 2,
     name: "Karyna Avdieieva",
     git: "https://github.com/karinavd",
     description: "Дизайнер, веб-разработчик и просто хороший человек",
-    image: "../../public/karina.jfif",
+    image: karinaImage,
   },
   {
     id: 3,
     name: "Sergey Lee",
     git: "https://github.com/SergLestr",
     description: "Веб-разработчик и бэкендер",
-    image: "../../public/sergey.png",
+    image: sergeyImage,
   },
 ];
