@@ -1,6 +1,8 @@
 import type { JSX } from "react";
+import { useNavigate } from "react-router-dom";
 
 const NotFoundPage = (): JSX.Element => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen min-w-screen flex items-center justify-center bg-dark-gunmetal px-4">
       <div className="text-center">
@@ -14,6 +16,9 @@ const NotFoundPage = (): JSX.Element => {
         <button
           type="button"
           className="inline-flex items-center text-2xl mt-5 px-8 py-3 bg-american-blue text-white rounded-xl hover:bg-independence transition"
+        onClick={() => {
+            navigate("/");
+          }}
         >
           Вернуться на главную
         </button>
