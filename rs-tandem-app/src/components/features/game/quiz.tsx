@@ -4,6 +4,12 @@ import questionsData from "./data/questions.json";
 import type { Question } from "../../../types/types.tsx";
 const questions = questionsData as Question[];
 
+const typeTitles: Record<string, string> = {
+  trueFalse: "True or False",
+  ABC: "Choose the correct answer",
+  oneOut: "Find the error",
+};
+
 function Quiz() {
   const [current, setCurrent] = useState<number>(0);
   const [score, setScore] = useState<number>(0);
@@ -82,7 +88,7 @@ function Quiz() {
             dark:text-white
               font-semibold"
           >
-            True or false?
+            {typeTitles[questions[current].type]}
           </h1>
 
           <span
