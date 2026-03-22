@@ -7,6 +7,7 @@ import { useState } from "react";
 import Registration from "./pages/Registration";
 import Login from "./pages/Login";
 import AboutUs from "./pages/AboutUs";
+import NotFoundPage from "./pages/NotFoundPage";
 function App() {
   const [isDark, setDark] = useState(false);
 
@@ -25,6 +26,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/about" element={<AboutUs />} />
               <Route path="/signUp" element={<Registration />} />
+              <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </main>
           <Footer />
