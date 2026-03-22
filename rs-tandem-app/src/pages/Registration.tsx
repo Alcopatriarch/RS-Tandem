@@ -5,6 +5,7 @@ import Auth from "../components/features/Auth/Auth";
 
 const Registration = () => {
   const dataArray = [nameFieldConfig, emailFieldConfig, passwordFieldConfig];
+
   return (
     <Auth dataArray={dataArray} label="Registration" btnContent="Sign Up" />
   );

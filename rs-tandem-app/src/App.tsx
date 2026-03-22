@@ -7,6 +7,7 @@ import { useState } from "react";
 import Registration from "./pages/Registration";
 import Login from "./pages/Login";
 import AboutUs from "./pages/AboutUs";
+
 function App() {
   const [isDark, setDark] = useState(false);
 
