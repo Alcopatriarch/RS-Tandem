@@ -8,6 +8,7 @@ import Registration from "./pages/Registration";
 import Login from "./pages/Login";
 import AboutUs from "./pages/AboutUs";
 import NotFoundPage from "./pages/NotFoundPage";
+
 function App() {
   const [isDark, setDark] = useState(false);
 

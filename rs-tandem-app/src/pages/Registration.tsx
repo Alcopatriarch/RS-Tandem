@@ -16,6 +16,7 @@ const Registration = () => {
 
   if (loading) return <Loading />;
   const dataArray = [nameFieldConfig, emailFieldConfig, passwordFieldConfig];
+
   return (
     <Auth dataArray={dataArray} label="Registration" btnContent="Sign Up" />
   );
