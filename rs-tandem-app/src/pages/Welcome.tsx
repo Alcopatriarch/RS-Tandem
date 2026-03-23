@@ -3,12 +3,22 @@ import { Button } from "@mui/material";
 import lightImg from "../assets/welcome_light.png";
 import darkImg from "../assets/welcome_dark.png";
 import { useNavigate } from "react-router-dom";
-
+import { useState, useEffect } from "react";
+import Loading from "../components/common/Loading.tsx";
 type HeaderProps = {
   darkMode?: boolean;
 };
 export const Welcome: React.FC<HeaderProps> = ({ darkMode = false }) => {
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
+  }, []);
+
+  if (loading) return <Loading />;
   return (
     <section className="w-full bg-milk  dark:bg-dark-gunmetal flex flex-col items-center justify-center text-center px-6">
       <img
