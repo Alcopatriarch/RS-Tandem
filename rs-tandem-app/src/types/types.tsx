@@ -1,4 +1,4 @@
-export type QuestionType = "trueFalse" | "ABC";
+export type QuestionType = "trueFalse" | "ABC" | "oneOut";
 
 export interface Question {
   id: string;

@@ -26,5 +26,19 @@
     "type": "ABC",
     "answers": ["A. number", "B. NaN", "C. undefined", "D. object"],
     "correctAnswer": 1
+  },
+  {
+    "id": "q5",
+    "question": "Identify which of the following operators is not a comparison operator in JavaScript",
+    "type": "oneOut",
+    "answers": ["===", "==", "=", "!="],
+    "correctAnswer": 3
+  },
+  {
+    "id": "q6",
+    "question": "Identify which of the following methods is not a standard method for working with arrays in JavaScript",
+    "type": "oneOut",
+    "answers": ["push()", "pop()", "shift()", "print()"],
+    "correctAnswer": 4
   }
 ]
