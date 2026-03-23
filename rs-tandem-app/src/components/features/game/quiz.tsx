@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Card from "./card";
 import questionsData from "./data/questions.json";
 import type { Question } from "../../../types/types.tsx";
+import Loading from "../../common/Loading.tsx";
 const questions = questionsData as Question[];
 
 const typeTitles: Record<string, string> = {
@@ -13,6 +14,15 @@ const typeTitles: Record<string, string> = {
 function Quiz() {
   const [current, setCurrent] = useState<number>(0);
   const [score, setScore] = useState<number>(0);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
+  }, []);
+
+  if (loading) return <Loading />;
 
   const handleAnswer = (isCorrect: boolean) => {
     if (isCorrect) setScore((prev) => prev + 1);

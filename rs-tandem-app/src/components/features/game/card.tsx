@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import type { Question } from "../../../types/types.tsx";
+import Loading from "../../common/Loading.tsx";
 
 interface Props {
   question: Question;
@@ -8,6 +9,15 @@ interface Props {
 
 function Card({ question, callback }: Props) {
   const [selected, setSelected] = useState<number | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
+  }, []);
+
+  if (loading) return <Loading />;
 
   const handleCheck = () => {
     if (selected === null) return;
