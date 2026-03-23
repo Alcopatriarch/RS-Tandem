@@ -11,6 +11,9 @@ import {
   updateProfile,
   createUserWithEmailAndPassword,
 } from "firebase/auth";
+import { toast } from "react-toastify";
+
+import { getFirebaseErrorMessage } from "../../../features/auth/api//firebaseErrors";
 
 async function SignInUser(
   email: string,
@@ -28,8 +31,10 @@ async function SignInUser(
     await updateProfile(user, { displayName });
 
     console.log("Пользователь создан и имя установлено:", displayName);
+    toast.success("Пользователь успешно создан!");
   } catch (error) {
     console.error(error);
+    toast.error(getFirebaseErrorMessage((error as { code: string }).code));
   }
 }
 
@@ -43,11 +48,13 @@ async function LoginUser(email: string, password: string) {
     const user = userCredential.user;
 
     console.log("Вход выполнен:", user.email);
+    toast.success("Успешный вход! Пользователь " + user.displayName);
     console.log("Текущее имя:", user.displayName || "не установлено");
 
     return user;
   } catch (error) {
-    console.error("Ошибка входа:", error.code, error.message);
+    console.error("Ошибка входа:", error);
+    toast.error(getFirebaseErrorMessage((error as { code: string }).code));
     throw error;
   }
 }
