@@ -57,7 +57,6 @@
   }
 }
 
-/* spinner */
 .spinner {
   width: 40px;
   height: 40px;
@@ -66,40 +65,4 @@
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin: 50px auto;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* skeleton */
-.skeleton {
-  background: #e0e0e0;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  animation: pulse 1.5s infinite;
-}
-
-.skeleton.title {
-  height: 20px;
-  width: 60%;
-}
-
-.skeleton.text {
-  height: 14px;
-  width: 100%;
-}
-
-@keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 1;
-  }
 }
