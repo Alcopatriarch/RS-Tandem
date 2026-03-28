@@ -1,4 +1,3 @@
-import React from "react";
 import type { SidebarItemType } from "../../../types/Sidebar/SidebarItem";
 
 interface PropsSidebarItem extends SidebarItemType {
