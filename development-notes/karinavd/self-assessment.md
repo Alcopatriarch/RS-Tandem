@@ -29,4 +29,4 @@ I developed an architecture for displaying content using an isolated and reusabl
 
 
 ## link to PR
-[Link](Link)
+[Link](https://github.com/Alcopatriarch/RS-Tandem/pull/122)
