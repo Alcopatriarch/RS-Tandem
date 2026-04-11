@@ -4,6 +4,7 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import IconButton from "@mui/material/IconButton";
+import { useNavigate } from "react-router-dom";
 
 type HeaderProps = {
   darkMode?: boolean;
@@ -18,6 +19,7 @@ export const Header: React.FC<HeaderProps> = ({
   onLangChange,
   onThemeChange,
 }) => {
+  const navigate = useNavigate();
   return (
     <header
       className={`
@@ -32,7 +34,9 @@ export const Header: React.FC<HeaderProps> = ({
         select-none
       `}
     >
-      <div className="text-base sm:text-lg tracking-tight ">Tandem App</div>
+      <div className="text-base sm:text-lg tracking-tight" onClick={() => navigate('/')}>
+        Tandem App
+      </div>
 
       <div className="flex items-center gap-2 sm:gap-3">
         <Select

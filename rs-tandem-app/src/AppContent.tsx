@@ -8,10 +8,12 @@ import { Welcome } from './pages/Welcome';
 import { Footer } from './components/layout/Footer';
 import { Header } from './components/layout/Header';
 import type { AppContentType } from './types/AppContentType';
+import Dashboard from "./pages/Dashboard";
+import Profile from "./pages/Profile";
 
 const AppContent = ({isDark,toggleTheme}:AppContentType) => {
     const location = useLocation();
-const showSidebarRoutes= ['/about','/profile'];
+const showSidebarRoutes= ['/about','/profile','/dashboard'];
 const showSidebar = showSidebarRoutes.includes(location.pathname);
   return (
      <div className="absolute top-0 left-0 w-[100%] min-h-screen bg-[#11212D] font-figtree">
@@ -24,6 +26,8 @@ const showSidebar = showSidebarRoutes.includes(location.pathname);
               <Route path="/login" element={<Login />} />
               <Route path="/about" element={<AboutUs />} />
               <Route path="/signUp" element={<Registration />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/profile" element={<Profile />} />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </main>
