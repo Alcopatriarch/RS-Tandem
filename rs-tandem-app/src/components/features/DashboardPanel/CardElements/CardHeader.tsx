@@ -1,4 +1,3 @@
-import React from "react";
 import { cn } from "../../../../utils";
 import type { Round } from "../../../../types/Dashboard/RoundType";
 
