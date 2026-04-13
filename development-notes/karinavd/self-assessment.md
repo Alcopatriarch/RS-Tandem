@@ -2,10 +2,10 @@
 
 | Feature | Description | PR | Points |
 | :--- | :--- | :---: | :---: |
-| Complex Component |Разработка сложного интерактивного компонента | | Dashboard +25
-| Rich UI Screen | Реализация экрана со сложной логикой и состоянием | | Dashboard, TasksPanel +40
-| Drag & Drop | Реализация перетаскивания (Kanban, сортировка, конструктор) | | 10
-| i18n | Локализация интерфейса (минимум 2 языка) с переключением | | 10
+| Complex Component |Разработка сложного интерактивного компонента | [https://github.com/Alcopatriarch/RS-Tandem/pull/124](https://github.com/Alcopatriarch/RS-Tandem/pull/124) | Dashboard +25
+| Rich UI Screen | Реализация экрана со сложной логикой и состоянием | [https://github.com/Alcopatriarch/RS-Tandem/pull/124](https://github.com/Alcopatriarch/RS-Tandem/pull/124) | Dashboard, TasksPanel +40
+| Drag & Drop | Реализация перетаскивания (Kanban, сортировка, конструктор) | [https://github.com/Alcopatriarch/RS-Tandem/pull/124](https://github.com/Alcopatriarch/RS-Tandem/pull/124) | 10
+| i18n | Локализация интерфейса (минимум 2 языка) с переключением | [https://github.com/Alcopatriarch/RS-Tandem/pull/124](https://github.com/Alcopatriarch/RS-Tandem/pull/124) | 10
 | Responsive | Адаптация верстки под мобильные устройства (от 320px) | | 5
 | Unit Tests (Basic) | Покрытие тестами 20%+ вашего личного кода | [https://github.com/Alcopatriarch/RS-Tandem/pull/95](https://github.com/Alcopatriarch/RS-Tandem/pull/95) | +10
 | React | Использование библиотеки React | | 5
