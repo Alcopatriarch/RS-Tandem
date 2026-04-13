@@ -3,7 +3,7 @@
 | Feature | Description | PR | Points |
 | :--- | :--- | :---: | :---: |
 | Complex Component |Разработка сложного интерактивного компонента | [https://github.com/Alcopatriarch/RS-Tandem/pull/124](https://github.com/Alcopatriarch/RS-Tandem/pull/124) | Dashboard +25
-| Rich UI Screen | Реализация экрана со сложной логикой и состоянием | [https://github.com/Alcopatriarch/RS-Tandem/pull/124](https://github.com/Alcopatriarch/RS-Tandem/pull/124) | Dashboard, TasksPanel +40
+| Rich UI Screen | Реализация экрана со сложной логикой и состоянием | [https://github.com/Alcopatriarch/RS-Tandem/pull/124](https://github.com/Alcopatriarch/RS-Tandem/pull/124) | Auth, TasksPanel +40
 | Drag & Drop | Реализация перетаскивания (Kanban, сортировка, конструктор) | [https://github.com/Alcopatriarch/RS-Tandem/pull/124](https://github.com/Alcopatriarch/RS-Tandem/pull/124) | 10
 | i18n | Локализация интерфейса (минимум 2 языка) с переключением | [https://github.com/Alcopatriarch/RS-Tandem/pull/124](https://github.com/Alcopatriarch/RS-Tandem/pull/124) | 10
 | Responsive | Адаптация верстки под мобильные устройства (от 320px) | | 5
