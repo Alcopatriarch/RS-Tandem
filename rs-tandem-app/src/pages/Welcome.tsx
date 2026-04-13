@@ -5,11 +5,13 @@ import darkImg from "../assets/welcome_dark.png";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Loading from "../components/common/Loading.tsx";
+import { useTranslation } from "react-i18next";
 type HeaderProps = {
   darkMode?: boolean;
 };
 export const Welcome: React.FC<HeaderProps> = ({ darkMode = false }) => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -28,11 +30,11 @@ export const Welcome: React.FC<HeaderProps> = ({ darkMode = false }) => {
       />
 
       <h1 className="text-[80px] text-dark-gunmetal  dark:text-american-silver font-(--font-figtree) mb-6">
-        Welcome to the Tandem App
+        {t("home.welcomeTitle")}
       </h1>
 
       <p className="text-[45px] text-dark-gunmetal  dark:text-american-silver mb-20">
-        Learn. Create. Conquer.
+        {t("home.subtitle")}
       </p>
 
       <div className="flex gap-20">
