@@ -13,23 +13,23 @@ import sergeyImage from "../assets/images/sergey.png";
 export const team: TeamMember[] = [
   {
     id: 1,
-    name: "Vladyslav Ivankov",
+    name: "team.member1.name",
     git: "https://github.com/Alcopatriarch",
-    description: "Тимлид, веб-разработчик и немного геймдизайнер",
+    description: "team.member1.description",
     image: alcopatriarchImage,
   },
   {
     id: 2,
-    name: "Karyna Avdieieva",
+    name: "team.member2.name",
     git: "https://github.com/karinavd",
-    description: "Дизайнер, веб-разработчик и просто хороший человек",
+    description: "team.member2.description",
     image: karinaImage,
   },
   {
     id: 3,
-    name: "Sergey Lee",
+    name: "team.member3.name",
     git: "https://github.com/SergLestr",
-    description: "Веб-разработчик и бэкендер",
+    description: "team.member3.description",
     image: sergeyImage,
   },
 ];

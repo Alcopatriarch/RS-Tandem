@@ -14,6 +14,8 @@ import {
 import { toast } from "react-toastify";
 
 import { getFirebaseErrorMessage } from "../../../features/auth/api//firebaseErrors";
+import { t } from "i18next";
+import { useNavigate } from "react-router-dom";
 
 async function SignInUser(
   email: string,
@@ -29,9 +31,7 @@ async function SignInUser(
     const user = userCredential.user;
 
     await updateProfile(user, { displayName });
-
-    console.log("Пользователь создан и имя установлено:", displayName);
-    toast.success("Пользователь успешно создан!");
+    toast.success(t("auth.registerSuccess"));
   } catch (error) {
     console.error(error);
     toast.error(getFirebaseErrorMessage((error as { code: string }).code));
@@ -47,13 +47,10 @@ async function LoginUser(email: string, password: string) {
     );
     const user = userCredential.user;
 
-    console.log("Вход выполнен:", user.email);
-    toast.success("Успешный вход! Пользователь " + user.displayName);
-    console.log("Текущее имя:", user.displayName || "не установлено");
+    toast.success(`${t("auth.loginSuccess")} ${user.displayName || ""}`);
 
     return user;
   } catch (error) {
-    console.error("Ошибка входа:", error);
     toast.error(getFirebaseErrorMessage((error as { code: string }).code));
     throw error;
   }
@@ -71,7 +68,7 @@ const Auth: React.FC<propsAuth> = ({ dataArray, label, btnContent }) => {
     handleSubmit,
     formState: { errors },
   } = useForm<LoginType>();
-
+  const navigate = useNavigate();
   const onSubmit: SubmitHandler<LoginType> = (data) => {
     if (label === "Registration") {
       SignInUser(
@@ -84,10 +81,11 @@ const Auth: React.FC<propsAuth> = ({ dataArray, label, btnContent }) => {
       LoginUser(data.authEmail, data.authPassword)
         .then((loggedInUser) => {
           const user = loggedInUser;
-          console.log("Пользователь вошел в систему:", user);
+          console.log(`${t("auth.loginSuccess")}`, user);
+          navigate("/dashboard");
         })
         .catch((error) => {
-          console.error("Ошибка входа:", error);
+          console.error(error);
         });
     }
   };

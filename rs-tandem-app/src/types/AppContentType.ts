@@ -1,4 +1,4 @@
 export type AppContentType = {
-    isDark:boolean;
-    toggleTheme:()=>void
-}
+  isDark: boolean;
+  toggleTheme: () => void;
+};

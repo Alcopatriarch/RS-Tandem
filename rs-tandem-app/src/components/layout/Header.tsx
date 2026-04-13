@@ -4,20 +4,20 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import IconButton from "@mui/material/IconButton";
+import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 type HeaderProps = {
   darkMode?: boolean;
-  lang?: "RU" | "EN";
-  onLangChange?: (newLang: "RU" | "EN") => void;
   onThemeChange: () => void;
 };
 
 export const Header: React.FC<HeaderProps> = ({
   darkMode = true,
-  lang = "RU",
-  onLangChange,
   onThemeChange,
 }) => {
+  const navigate = useNavigate();
+  const { i18n } = useTranslation();
   return (
     <header
       className={`
@@ -32,12 +32,17 @@ export const Header: React.FC<HeaderProps> = ({
         select-none
       `}
     >
-      <div className="text-base sm:text-lg tracking-tight ">Tandem App</div>
+      <div
+        className="text-base sm:text-lg cursor-pointer tracking-tight"
+        onClick={() => navigate("/")}
+      >
+        Tandem App
+      </div>
 
       <div className="flex items-center gap-2 sm:gap-3">
         <Select
-          value={lang}
-          onChange={(e) => onLangChange?.(e.target.value as "RU" | "EN")}
+          value={i18n.language}
+          onChange={(e) => i18n.changeLanguage(e.target.value)}
           size="small"
           variant="outlined"
           sx={{
@@ -66,7 +71,7 @@ export const Header: React.FC<HeaderProps> = ({
             },
           }}
         >
-          <MenuItem value="RU">RU</MenuItem>
+          <MenuItem value="UA">UA</MenuItem>
           <MenuItem value="EN">EN</MenuItem>
         </Select>
 

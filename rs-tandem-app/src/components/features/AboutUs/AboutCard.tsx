@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import type { TeamMember } from "../../../types/index";
 
 interface Props {
@@ -5,6 +6,7 @@ interface Props {
 }
 
 const AboutCard: React.FC<Props> = ({ member }) => {
+  const { t } = useTranslation();
   return (
     <div className="bg-american-silver dark:bg-japanese-indigo text-center p-8 rounded-sm shadow-sm w-[320px]">
       <div className="flex justify-center mb-4">
@@ -16,7 +18,7 @@ const AboutCard: React.FC<Props> = ({ member }) => {
       </div>
 
       <h3 className="text-xl pb-3 font-semibold mt-1 dark:text-american-silver">
-        {member.name}
+        {t(member.name)}
       </h3>
 
       <a
@@ -29,7 +31,7 @@ const AboutCard: React.FC<Props> = ({ member }) => {
       </a>
 
       <p className="text-dark-gunmetal dark:text-american-silver mt-4 text-2x1">
-        {member.description}
+        {t(member.description)}
       </p>
 
       <div className="flex justify-center gap-4 mt-5 text-gray-500"></div>
