@@ -34,5 +34,29 @@ Screenshot:
 
 ### Link to deploy
 https://rs-tandem-seven.vercel.app
+
+## Getting Started
+### 1. Clone this repository
+[https://github.com/Alcopatriarch/RS-Tandem.git](https://github.com/Alcopatriarch/RS-Tandem.git)
+### 2. Install dependencies
+Run the following command to download all required libraries `npm install`
+### 3. Set up environment variables (Firebase)
+1. Find the .env.example (or .env.local.example) file in the root of the project.
+2. Create a copy of it in the same folder and name it .env (or .env.local).
+3. Open the newly created file and fill it with your actual Firebase keys.
+### 4. Start the development server
+To run the project locally, execute `npm run dev`
+### 5. Additional useful developer commands
+1. Code check (Linter):
+`npm run lint`
+2. Auto-format code:
+`npm run prettier`
+3. Run tests (Vitest) `npm run test`
+4. Create a production build (for testing before deployment) `npm run build`
+5. Preview the production build locally `npm run preview`
+
+### Getting started link 
+[https://github.com/Alcopatriarch/RS-Tandem/main/README.md#getting-started](https://github.com/Alcopatriarch/RS-Tandem/main/README.md#getting-started)
+
 ### Link to video checkpoint 5
 https://youtu.be/26gJlmupBW4
